@@ -1,0 +1,54 @@
+sohan@sohan-Dell Latitude-E5-571P:~$ ls
+ a.out       examples.desktop                   npprgm.c           Templates
+ Desktop     mongodb-compass_1.26.0_amd64.deb  'Part A Programs'   Videos
+ Documents   Music                              Pictures
+ Downloads   npprgm2.c                          Public
+sohan@sohan-Dell Latitude-E5-571P:~$ gedit npprgm2.c
+sohan@sohan-Dell Latitude-E5-571P:~$ gcc npprgm2.c
+npprgm2.c: In function ‘main’:
+npprgm2.c:16:38: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t {aka long unsigned int}’ [-Wformat=]
+  printf("String length of buffer is %d\n",strlen(buffer));
+                                     ~^    ~~~~~~~~~~~~~~
+                                     %ld
+sohan@sohan-Dell Latitude-E5-571P:~$ ./a.out
+How many frames you want to send: 5
+Enter frame
+sohan
+String length of buffer is 5
+Enter frame
+Istanbul
+String length of buffer is 8
+Enter frame
+Esfahan
+String length of buffer is 7
+Enter frame
+Ankara
+String length of buffer is 6
+Enter frame
+Jerusalem
+String length of buffer is 9
+7sohan7Istanbul5Esfahan5Ankara6Jerusalem
+
+This is the reciever
+
+Data recieved is 7sohan7Istanbul5Esfahan5Ankara6Jerusalem
+Length of this frame is 7
+
+Frame ----->sohan
+
+Length of this frame is 7
+
+Frame ----->Istanbul
+
+Length of this frame is 5
+
+Frame ----->Esfahan
+
+Length of this frame is 5
+
+Frame ----->Ankara
+
+Length of this frame is 6
+
+Frame ----->Jerusalem
+sohan@sohan-Dell Latitude-E5-571PP:~$ 
