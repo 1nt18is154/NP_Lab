@@ -1,0 +1,23 @@
+sohan@sohan-Dell Latitude-E5-571P:~$ cd Part A Programs
+bash: cd: too many arguments
+sohan@sohan-Dell Latitude-E5-571P:~$ cd PartAPrograms
+sohan@sohan-Dell Latitude-E5-571P:~/PartAPrograms$ gedit tcp.txt
+sohan@sohan-Dell Latitude-E5-571P:~/PartAPrograms$ gedit server.c
+sohan@sohan-Dell Latitude-E5-571P:~/PartAPrograms$ gcc server.c
+sohan@sohan-Dell Latitude-E5-571P:~/PartAPrograms$ ./a.out
+unable to bind: Address already in use
+sohan@sohan-Dell Latitude-E5-571P:~/PartAPrograms$ gedit server.c
+sohan@sohan-Dell Latitude-E5-571P:~/PartAPrograms$ gcc server.c
+sohan@sohan-Dell Latitude-E5-571P:~/PartAPrograms$ ./a.out
+tcp server is waiting for client on port XXXX
+received data is tcp.txt
+
+
+sohan@sohan-Dell Latitude-E5-571P:~/PartAPrograms$ gcc server.c
+sohan@sohan-Dell Latitude-E5-571P:~/PartAPrograms$ ./a.out
+tcp server is waiting for client on port XXXX
+received data is hello hi
+
+
+Segmentation fault (core dumped)
+sohan@sohan-Dell Latitude-E5-571P:~/PartAPrograms$ 
