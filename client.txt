@@ -1,0 +1,13 @@
+sohan@sohan-Dell Latitude-E5-571P:~/PartAPrograms$ gedit client.c
+sohan@sohan-Dell Latitude-E5-571P:~/PartAPrograms$ gcc client.c
+client.c: In function ‘main’:
+client.c:32:3: warning: implicit declaration of function ‘gets’; did you mean ‘fgets’? [-Wimplicit-function-declaration]
+   gets(send_data);
+   ^~~~
+   fgets
+/tmp/ccNDV0qI.o: In function `main':
+client.c:(.text+0xe5): warning: the `gets' function is dangerous and should not be used.
+sohan@sohan-Dell Latitude-E5-571P:~/PartAPrograms$ ./a.out
+send Filename to send
+tcp.txt
+hello hi
